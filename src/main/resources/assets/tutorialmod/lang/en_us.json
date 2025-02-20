@@ -10,5 +10,9 @@
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
   "block.tutorialmod.magic_block": "Magic Block",
   "creativetab.tutorialmod.alexandite_items": "Alexandrite Items",
-  "creativetab.tutorialmod.alexandite_blocks": "Alexandrite Blocks"
+  "creativetab.tutorialmod.alexandite_blocks": "Alexandrite Blocks",
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite magical bro.",
+  "tooltip.tutorialmod.chisel": "Press Shift for more info",
+  "tooltip.tutorialmod.chisel.shift_down": "A chisel that does some crazy stuff",
+  "tooltip.tutorialmod.kohlrabi": "Yummy..."
 }
