@@ -1,12 +1,14 @@
 {
   "item.tutorialmod.alexandrite": "Alexandrite",
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
-
+  "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.kohlrabi": "Kohlrabi",
+  "item.tutorialmod.aurora_ashes": "Aurora Ashes",
   "block.tutorialmod.alexandrite_block": "Alexandrite Block",
   "block.tutorialmod.raw_alexandrite_block": "Raw Alexandrite Block",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
-
+  "block.tutorialmod.magic_block": "Magic Block",
   "creativetab.tutorialmod.alexandite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandite_blocks": "Alexandrite Blocks"
 }
