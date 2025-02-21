@@ -20,6 +20,7 @@
   "block.tutorialmod.alexandrite_wall": "Alexandrite Wall",
   "block.tutorialmod.alexandrite_door": "Alexandrite Door",
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
+  "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
   "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite magical bro.",
   "tooltip.tutorialmod.chisel": "Press Shift for more info",
   "tooltip.tutorialmod.chisel.shift_down": "A chisel that does some crazy stuff",
