@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.silas.tutorialmod.block.ModBlocks;
+import net.silas.tutorialmod.component.ModDataComponentTypes;
 import net.silas.tutorialmod.item.ModCreativeModeTabs;
 import net.silas.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -39,6 +40,8 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
