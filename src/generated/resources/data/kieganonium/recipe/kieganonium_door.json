@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "kieganonium",
+  "key": {
+    "#": {
+      "item": "kieganonium:kieganonium"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "kieganonium:kieganonium_door"
+  }
+}

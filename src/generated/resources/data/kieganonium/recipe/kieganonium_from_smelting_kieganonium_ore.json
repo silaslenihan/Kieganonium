@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "kieganonium",
+  "ingredient": {
+    "item": "kieganonium:kieganonium_ore"
+  },
+  "result": {
+    "id": "kieganonium:kieganonium"
+  }
+}

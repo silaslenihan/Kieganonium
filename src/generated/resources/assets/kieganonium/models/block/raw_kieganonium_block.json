@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kieganonium:block/raw_kieganonium_block"
+  }
+}

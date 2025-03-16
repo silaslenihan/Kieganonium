@@ -1,9 +1,9 @@
 {
   "values": [
-    "tutorialmod:alexandrite_block",
-    "tutorialmod:raw_alexandrite_block",
-    "tutorialmod:alexandrite_ore",
-    "tutorialmod:alexandrite_deepslate_ore",
-    "tutorialmod:magic_block"
+    "kieganonium:kieganonium_block",
+    "kieganonium:raw_kieganonium_block",
+    "kieganonium:kieganonium_ore",
+    "kieganonium:kieganonium_deepslate_ore",
+    "kieganonium:magic_block"
   ]
 }

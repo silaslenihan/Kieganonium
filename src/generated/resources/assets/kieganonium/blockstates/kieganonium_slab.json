@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kieganonium:block/kieganonium_slab"
+    },
+    "type=double": {
+      "model": "kieganonium:block/kieganonium_block"
+    },
+    "type=top": {
+      "model": "kieganonium:block/kieganonium_slab_top"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// 1.21	2025-03-16T19:52:55.619108	Tags for minecraft:block mod id kieganonium
+a8c36b2c28d2463324228a0bca1450bdda5999ff data/kieganonium/tags/block/incorrect_for_kieganonium_tool.json
+95abf94ae035339222af652591951ffba7f0f7d3 data/kieganonium/tags/block/needs_kieganonium_tool.json
+bb12f78e5e21687f7b973c0bc1d87912a48bf1ed data/minecraft/tags/block/fence_gates.json
+0ed53c8e6d7fd1b9ab92f67a3f204e54a405a6d1 data/minecraft/tags/block/fences.json
+e4f6b48a789d6e211a59ef78a04b2b7b1e109a61 data/minecraft/tags/block/mineable/pickaxe.json
+b44a7a7c45fd23cea297d9fecc0cf345cc37000a data/minecraft/tags/block/needs_diamond_tool.json
+602554bac7062482c95e0219d97a69a624e2cf34 data/minecraft/tags/block/needs_iron_tool.json
+38e87130625a122f801042324b3b05a3968abcc0 data/minecraft/tags/block/walls.json

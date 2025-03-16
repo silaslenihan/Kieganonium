@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "kieganonium",
+  "ingredient": {
+    "item": "kieganonium:raw_kieganonium"
+  },
+  "result": {
+    "id": "kieganonium:kieganonium"
+  }
+}

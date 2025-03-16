@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "kieganonium:block/kieganonium_lamp_off"
+    },
+    "clicked=true": {
+      "model": "kieganonium:block/kieganonium_lamp_on"
+    }
+  }
+}

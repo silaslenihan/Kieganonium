@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "kieganonium:block/kieganonium_block",
+    "side": "kieganonium:block/kieganonium_block",
+    "top": "kieganonium:block/kieganonium_block"
+  }
+}

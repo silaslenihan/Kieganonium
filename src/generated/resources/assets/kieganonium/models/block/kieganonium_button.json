@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "kieganonium:block/kieganonium_block"
+  }
+}

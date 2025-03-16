@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "tutorialmod:block/alexandrite_block",
-    "side": "tutorialmod:block/alexandrite_block",
-    "top": "tutorialmod:block/alexandrite_block"
-  }
-}

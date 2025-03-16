@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "kieganonium",
+  "ingredients": [
+    {
+      "item": "kieganonium:kieganonium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kieganonium:kieganonium_button"
+  }
+}
