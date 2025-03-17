@@ -34,8 +34,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.KIEGANONIUM_CHESTPLATE.get());
                                 output.accept(ModItems.KIEGANONIUM_LEGGINGS.get());
                                 output.accept(ModItems.KIEGANONIUM_BOOTS.get());
-                                output.accept(ModItems.KIEGANONIUM_BODY.get());
-
+                                output.accept(ModItems.JAVELIN.get());
                             })
                             .build());
 

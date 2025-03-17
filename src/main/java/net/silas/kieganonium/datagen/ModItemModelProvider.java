@@ -68,6 +68,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.KIEGANONIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.KIEGANONIUM_LEGGINGS);
         trimmedArmorItem(ModItems.KIEGANONIUM_BOOTS);
+
+        singleTexture(
+                // Use getId().getPath() to get the item name instead of getRegistryName().getPath()
+                ModItems.JAVELIN.getId().getPath(),
+                mcLoc("item/handheld"),  // or item/generated
+                "layer0",
+                modLoc("item/javelin_model")   // your texture path assets/kieganonium/textures/item/javelin_model.png
+        );
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

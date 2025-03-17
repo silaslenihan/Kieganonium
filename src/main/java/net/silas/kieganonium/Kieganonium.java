@@ -16,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.silas.kieganonium.block.ModBlocks;
 import net.silas.kieganonium.component.ModDataComponentTypes;
+import net.silas.kieganonium.entity.ModEntities;
 import net.silas.kieganonium.item.ModCreativeModeTabs;
 import net.silas.kieganonium.effect.ModEffects;
 import net.silas.kieganonium.item.ModItems;
@@ -44,6 +45,7 @@ public class Kieganonium {
 
         ModDataComponentTypes.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

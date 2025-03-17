@@ -72,6 +72,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.KIEGANONIUM_ARMOR_MATERIAL, ArmorItem.Type.BODY,
                     new Item.Properties().durability(ArmorItem.Type.BODY.getDurability(18))));
 
+    public static final RegistryObject<Item> JAVELIN = ITEMS.register("javelin",
+            () -> new JavelinItem(new Item.Properties().durability(250)));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
