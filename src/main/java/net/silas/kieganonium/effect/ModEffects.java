@@ -13,7 +13,8 @@ import net.silas.kieganonium.Kieganonium;
 public class ModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Kieganonium.MOD_ID);
 
-    public static final RegistryObject<MobEffect> HUGE = EFFECTS.register("huge", () -> new HugeEffect(MobEffectCategory.BENEFICIAL, 0xFFA500));
+    public static final RegistryObject<MobEffect> HUGE = EFFECTS.register("huge",
+            () -> new HugeEffect(MobEffectCategory.BENEFICIAL, 0xFFA500));
 
     public static Holder<MobEffect> HUGE_HOLDER() {
         return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(HUGE.get());

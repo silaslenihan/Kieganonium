@@ -21,8 +21,7 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.KIEGANONIUM_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.JUMP, 200, 5, false, false),
                                     new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false),
-                                    new MobEffectInstance(ModEffects.HUGE_HOLDER(), 200, 1, false, false),
-                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 20, false, false))
+                                    new MobEffectInstance(ModEffects.HUGE_HOLDER(), 200, 1, false, false))
                     )
                     .build();
 

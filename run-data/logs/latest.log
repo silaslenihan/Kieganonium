@@ -1,41 +1,41 @@
-[16Mar2025 19:53:04.103] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/silaslenihan/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, kieganonium, --all, --output, /Users/silaslenihan/Desktop/coding/forge-tutorial/src/generated/resources, --existing, /Users/silaslenihan/Desktop/coding/forge-tutorial/src/main/resources, --mixin.config, mixins.kieganonium.json]
-[16Mar2025 19:53:04.104] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
-[16Mar2025 19:53:04.104] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 15.3.1
-[16Mar2025 19:53:04.132] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[16Mar2025 19:53:04.166] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/silaslenihan/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[16Mar2025 19:53:04.518] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[16Mar2025 19:53:04.754] [main/WARN] [mixin/]: Compatibility level JAVA_17 specified by mixins.kieganonium.json is higher than the maximum level supported by this version of mixin (JAVA_13).
-[16Mar2025 19:53:04.754] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[16Mar2025 19:53:04.754] [main/ERROR] [mixin/]: Mixin config mixins.kieganonium.json does not specify "minVersion" or "requiredFeatures" property
-[16Mar2025 19:53:04.756] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/silaslenihan/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, kieganonium, --all, --output, /Users/silaslenihan/Desktop/coding/forge-tutorial/src/generated/resources, --existing, /Users/silaslenihan/Desktop/coding/forge-tutorial/src/main/resources]
-[16Mar2025 19:53:04.762] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
-[16Mar2025 19:53:04.763] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
-[16Mar2025 19:53:04.764] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
-[16Mar2025 19:53:04.764] [main/INFO] [mixin/]: Selecting config mixins.kieganonium.json
-[16Mar2025 19:53:04.765] [main/WARN] [mixin/]: Reference map 'tutorailmod.mixin-refmap.json' for mixins.kieganonium.json could not be read. If this is a development environment you can ignore this message
-[16Mar2025 19:53:04.765] [main/INFO] [mixin/]: Preparing mixins.kieganonium.json (2)
-[16Mar2025 19:53:04.781] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
-[16Mar2025 19:53:04.900] [main/INFO] [mixin/]: Mixing LivingEntityMixin from mixins.kieganonium.json into net.minecraft.world.entity.LivingEntity
-[16Mar2025 19:53:04.909] [main/WARN] [mixin/]: mixins.kieganonium.json:LivingEntityMixin: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
-[16Mar2025 19:53:06.360] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[16Mar2025 19:53:06.360] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[16Mar2025 19:53:06.367] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[16Mar2025 19:53:06.589] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [kieganonium]
-[16Mar2025 19:53:06.606] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/silaslenihan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[16Mar2025 19:53:06.606] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/silaslenihan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[16Mar2025 19:53:06.611] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/silaslenihan/Desktop/coding/forge-tutorial/src/main/resources, ignoring
-[16Mar2025 19:53:06.615] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/silaslenihan/Desktop/coding/forge-tutorial/src/main/resources, ignoring
-[16Mar2025 19:53:06.642] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[16Mar2025 19:53:06.743] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 100 ms
-[16Mar2025 19:53:06.743] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[16Mar2025 19:53:06.755] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 12 ms
-[16Mar2025 19:53:06.755] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id kieganonium
-[16Mar2025 19:53:06.759] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id kieganonium finished after 3 ms
-[16Mar2025 19:53:06.759] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id kieganonium
-[16Mar2025 19:53:06.759] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id kieganonium finished after 0 ms
-[16Mar2025 19:53:06.759] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: kieganonium
-[16Mar2025 19:53:06.765] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: kieganonium finished after 5 ms
-[16Mar2025 19:53:06.765] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: kieganonium
-[16Mar2025 19:53:06.801] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: kieganonium finished after 35 ms
-[16Mar2025 19:53:06.801] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 158 ms
-[16Mar2025 19:53:06.804] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 182, old count: 182, new count: 183, removed stale: 0, written: 0
+[16Mar2025 20:54:50.459] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/silaslenihan/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, kieganonium, --all, --output, /Users/silaslenihan/Desktop/coding/kieganonium/src/generated/resources, --existing, /Users/silaslenihan/Desktop/coding/kieganonium/src/main/resources, --mixin.config, mixins.kieganonium.json]
+[16Mar2025 20:54:50.460] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[16Mar2025 20:54:50.461] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 15.3.1
+[16Mar2025 20:54:50.493] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[16Mar2025 20:54:50.532] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/silaslenihan/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[16Mar2025 20:54:50.906] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16Mar2025 20:54:51.153] [main/WARN] [mixin/]: Compatibility level JAVA_17 specified by mixins.kieganonium.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[16Mar2025 20:54:51.153] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[16Mar2025 20:54:51.153] [main/ERROR] [mixin/]: Mixin config mixins.kieganonium.json does not specify "minVersion" or "requiredFeatures" property
+[16Mar2025 20:54:51.155] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/silaslenihan/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, kieganonium, --all, --output, /Users/silaslenihan/Desktop/coding/kieganonium/src/generated/resources, --existing, /Users/silaslenihan/Desktop/coding/kieganonium/src/main/resources]
+[16Mar2025 20:54:51.161] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
+[16Mar2025 20:54:51.162] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[16Mar2025 20:54:51.163] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[16Mar2025 20:54:51.163] [main/INFO] [mixin/]: Selecting config mixins.kieganonium.json
+[16Mar2025 20:54:51.163] [main/WARN] [mixin/]: Reference map 'tutorailmod.mixin-refmap.json' for mixins.kieganonium.json could not be read. If this is a development environment you can ignore this message
+[16Mar2025 20:54:51.164] [main/INFO] [mixin/]: Preparing mixins.kieganonium.json (2)
+[16Mar2025 20:54:51.179] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[16Mar2025 20:54:51.297] [main/INFO] [mixin/]: Mixing LivingEntityMixin from mixins.kieganonium.json into net.minecraft.world.entity.LivingEntity
+[16Mar2025 20:54:51.306] [main/WARN] [mixin/]: mixins.kieganonium.json:LivingEntityMixin: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[16Mar2025 20:54:53.069] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[16Mar2025 20:54:53.069] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[16Mar2025 20:54:53.076] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[16Mar2025 20:54:53.308] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [kieganonium]
+[16Mar2025 20:54:53.330] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/silaslenihan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[16Mar2025 20:54:53.330] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/silaslenihan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[16Mar2025 20:54:53.334] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/silaslenihan/Desktop/coding/kieganonium/src/main/resources, ignoring
+[16Mar2025 20:54:53.339] [main/WARN] [net.minecraft.server.packs.PathPackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /Users/silaslenihan/Desktop/coding/kieganonium/src/main/resources, ignoring
+[16Mar2025 20:54:53.366] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[16Mar2025 20:54:53.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 98 ms
+[16Mar2025 20:54:53.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[16Mar2025 20:54:53.479] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 13 ms
+[16Mar2025 20:54:53.479] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id kieganonium
+[16Mar2025 20:54:53.482] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id kieganonium finished after 2 ms
+[16Mar2025 20:54:53.482] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id kieganonium
+[16Mar2025 20:54:53.482] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id kieganonium finished after 0 ms
+[16Mar2025 20:54:53.482] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: kieganonium
+[16Mar2025 20:54:53.489] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: kieganonium finished after 6 ms
+[16Mar2025 20:54:53.489] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: kieganonium
+[16Mar2025 20:54:53.522] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: kieganonium finished after 32 ms
+[16Mar2025 20:54:53.522] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 155 ms
+[16Mar2025 20:54:53.524] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 182, old count: 182, new count: 183, removed stale: 0, written: 0
