@@ -19,8 +19,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.KIEGANONIUM_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.JUMP, 200, 5, false, false),
-                                    new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false),
+                            List.of(new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false),
                                     new MobEffectInstance(ModEffects.HUGE_HOLDER(), 200, 1, false, false))
                     )
                     .build();

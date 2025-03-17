@@ -20,8 +20,11 @@ public class HugeEffect extends MobEffect {
         AttributeInstance entityRangeAttribute = pLivingEntity.getAttribute(Attributes.ENTITY_INTERACTION_RANGE);
         AttributeInstance movementSpeedAttribute = pLivingEntity.getAttribute(Attributes.MOVEMENT_SPEED);
         AttributeInstance stepHeightAttribute = pLivingEntity.getAttribute(Attributes.STEP_HEIGHT);
+        AttributeInstance jumpStrengthAttribute = pLivingEntity.getAttribute(Attributes.JUMP_STRENGTH);
+        AttributeInstance gravityAttribute = pLivingEntity.getAttribute(Attributes.GRAVITY);
+        AttributeInstance safeFallDistanceAttribute = pLivingEntity.getAttribute(Attributes.SAFE_FALL_DISTANCE);
 
-        float multiplier = 10.0F;
+        float multiplier = 5.0F;
 
         if (scaleAttribute != null) {
             scaleAttribute.setBaseValue(multiplier);
@@ -38,6 +41,15 @@ public class HugeEffect extends MobEffect {
         if (stepHeightAttribute != null) {
             stepHeightAttribute.setBaseValue(1.0F);
         }
+        if (jumpStrengthAttribute != null) {
+            jumpStrengthAttribute.setBaseValue(0.42F * (multiplier / 1.5));
+        }
+        if (gravityAttribute != null) {
+            gravityAttribute.setBaseValue(0.08 * multiplier / 2.5);
+        }
+        if (safeFallDistanceAttribute != null) {
+            safeFallDistanceAttribute.setBaseValue(3.0F * multiplier);
+        }
         return true;
     }
 
@@ -51,6 +63,9 @@ public class HugeEffect extends MobEffect {
         AttributeInstance entityRangeAttribute = pAttributeMap.getInstance(Attributes.ENTITY_INTERACTION_RANGE);
         AttributeInstance movementSpeedAttribute = pAttributeMap.getInstance(Attributes.MOVEMENT_SPEED);
         AttributeInstance stepHeightAttribute = pAttributeMap.getInstance(Attributes.STEP_HEIGHT);
+        AttributeInstance jumpStrengthAttribute = pAttributeMap.getInstance(Attributes.JUMP_STRENGTH);
+        AttributeInstance gravityAttribute = pAttributeMap.getInstance(Attributes.GRAVITY);
+        AttributeInstance safeFallDistanceAttribute = pAttributeMap.getInstance(Attributes.SAFE_FALL_DISTANCE);
 
         if (scaleAttribute != null) {
             scaleAttribute.setBaseValue(1.0F); // Reset size to normal
@@ -66,6 +81,15 @@ public class HugeEffect extends MobEffect {
         }
         if (stepHeightAttribute != null) {
             stepHeightAttribute.setBaseValue(0.6F);
+        }
+        if (jumpStrengthAttribute != null) {
+            jumpStrengthAttribute.setBaseValue(0.42F);
+        }
+        if (gravityAttribute != null) {
+            gravityAttribute.setBaseValue(0.08F);
+        }
+        if (safeFallDistanceAttribute != null) {
+            safeFallDistanceAttribute.setBaseValue(3.0F);
         }
     }
 
