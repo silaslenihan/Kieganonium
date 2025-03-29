@@ -21,9 +21,9 @@ public class ModCreativeModeTabs {
                             .displayItems((itemDisplayParameters, output) -> {
                                 output.accept(ModItems.KIEGANONIUM.get());
                                 output.accept(ModItems.RAW_KIEGANONIUM.get());
-                                output.accept(ModItems.CHISEL.get());
-                                output.accept(ModItems.KOHLRABI.get());
-                                output.accept(ModItems.AURORA_ASHES.get());
+//                                output.accept(ModItems.CHISEL.get());
+//                                output.accept(ModItems.KOHLRABI.get());
+//                                output.accept(ModItems.AURORA_ASHES.get());
                                 output.accept(ModItems.KIEGANONIUM_SWORD.get());
                                 output.accept(ModItems.KIEGANONIUM_PICKAXE.get());
                                 output.accept(ModItems.KIEGANONIUM_SHOVEL.get());

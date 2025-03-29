@@ -68,9 +68,6 @@ public class ModItems {
     public static final RegistryObject<Item> KIEGANONIUM_BOOTS = ITEMS.register("kieganonium_boots",
             () -> new ArmorItem(ModArmorMaterials.KIEGANONIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
-    public static final RegistryObject<Item> KIEGANONIUM_BODY = ITEMS.register("kieganonium_body",
-            () -> new ArmorItem(ModArmorMaterials.KIEGANONIUM_ARMOR_MATERIAL, ArmorItem.Type.BODY,
-                    new Item.Properties().durability(ArmorItem.Type.BODY.getDurability(18))));
 
     public static final RegistryObject<Item> JAVELIN = ITEMS.register("javelin",
             () -> new JavelinItem(new Item.Properties().durability(250)));
