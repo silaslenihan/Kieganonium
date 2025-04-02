@@ -74,7 +74,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ModItems.JAVELIN.getId().getPath(),
                 mcLoc("item/handheld"),  // or item/generated
                 "layer0",
-                modLoc("item/javelin_model")   // your texture path assets/kieganonium/textures/item/javelin_model.png
+                modLoc("item/javelin")   // your texture path assets/kieganonium/textures/item/javelin_model.png
         );
     }
 

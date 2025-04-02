@@ -1,5 +1,8 @@
 package net.silas.kieganonium.entity.custom;
 
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
@@ -12,12 +15,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
+import net.silas.kieganonium.effect.HugeEffect;
+import net.silas.kieganonium.effect.ModEffects;
 import net.silas.kieganonium.entity.ModEntities;
 import net.silas.kieganonium.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrownJavelin extends ThrownTrident implements ItemSupplier {
     private final ItemStack javelinStack;
+
+    private static final EntityDataAccessor<Boolean> IS_HUGE =
+            SynchedEntityData.defineId(ThrownJavelin.class, EntityDataSerializers.BOOLEAN);
+
 
     public ThrownJavelin(EntityType<? extends ThrownTrident> entityType, Level level) {
         super(entityType, level);
@@ -42,6 +51,21 @@ public class ThrownJavelin extends ThrownTrident implements ItemSupplier {
             this.returnToThrower(player);
             this.discard();
         }
+        if (this.getOwner() instanceof Player player) {
+            if (player.hasEffect(ModEffects.HUGE_HOLDER())) {
+                this.entityData.set(IS_HUGE, true);
+            }
+        }
+    }
+
+    @Override
+    protected void defineSynchedData(SynchedEntityData.Builder pBuilder) {
+        super.defineSynchedData(pBuilder);
+        pBuilder.define(IS_HUGE, false);
+    }
+
+    public boolean isHuge() {
+        return this.entityData.get(IS_HUGE);
     }
 
     private void returnToThrower(Player player) {
@@ -83,24 +107,28 @@ public class ThrownJavelin extends ThrownTrident implements ItemSupplier {
     }
 
     private void explode(double x, double y, double z) {
-        if (!this.level().isClientSide) {
-            this.level().explode(
-                    this,
-                    x, y, z,
-                    5.0F,
-                    Level.ExplosionInteraction.TNT
-            );
+        if (this.getOwner() instanceof Player player && player.hasEffect(ModEffects.HUGE_HOLDER())) {
+            if (!this.level().isClientSide) {
+                this.level().explode(
+                        this,
+                        x, y, z,
+                        5.0F,
+                        Level.ExplosionInteraction.TNT
+                );
+            }
         }
     }
 
 
     private void strikeLightningAt(double x, double y, double z) {
-        if (!this.level().isClientSide) {
-            LightningBolt lightning = EntityType.LIGHTNING_BOLT.create(this.level());
-            if (lightning != null) {
-                lightning.moveTo(x, y, z);
-                lightning.setCause(this.getOwner() instanceof ServerPlayer player ? player : null);
-                this.level().addFreshEntity(lightning);
+        if (this.getOwner() instanceof Player player && player.hasEffect(ModEffects.HUGE_HOLDER())) {
+            if (!this.level().isClientSide) {
+                LightningBolt lightning = EntityType.LIGHTNING_BOLT.create(this.level());
+                if (lightning != null) {
+                    lightning.moveTo(x, y, z);
+                    lightning.setCause(this.getOwner() instanceof ServerPlayer playerS ? playerS : null);
+                    this.level().addFreshEntity(lightning);
+                }
             }
         }
     }

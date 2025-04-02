@@ -1,6 +1,7 @@
 package net.silas.kieganonium.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -42,24 +43,23 @@ public class JavelinRenderer extends EntityRenderer<ThrownJavelin> {
                        PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
         poseStack.pushPose();
 
-        // Basic rotation to face the flying direction
         float yaw = Mth.lerp(partialTicks, entity.yRotO, entity.getYRot());
         float pitch = Mth.lerp(partialTicks, entity.xRotO, entity.getXRot());
 
-        poseStack.mulPose(com.mojang.math.Axis.YP.rotationDegrees(yaw));
-        poseStack.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(pitch));
+        poseStack.mulPose(Axis.YP.rotationDegrees(yaw));
+        poseStack.mulPose(Axis.ZP.rotationDegrees(pitch));
 
-        // If you want a smaller or bigger javelin, scale here:
-        // poseStack.scale(0.5F, 0.5F, 0.5F);
+        if (entity.isHuge()) {
+            poseStack.scale(3.0F, 3.0F, 3.0F);
+        }
 
-        // Our 5-arg renderToBuffer includes pColor, so let's pass 0xFFFFFF for white
-        // (alpha is presumably omitted in your version)
-        model.renderToBuffer(
+        // Render the normal javelin model
+        this.model.renderToBuffer(
                 poseStack,
-                buffer.getBuffer(model.renderType(TEXTURE)),
+                buffer.getBuffer(this.model.renderType(getTextureLocation(entity))),
                 packedLight,
                 OverlayTexture.NO_OVERLAY,
-                0xFFFFFF // Full white color
+                0xFFFFFF
         );
 
         poseStack.popPose();

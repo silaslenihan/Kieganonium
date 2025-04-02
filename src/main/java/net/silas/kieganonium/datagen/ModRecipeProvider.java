@@ -1,5 +1,7 @@
 package net.silas.kieganonium.datagen;
 
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.silas.kieganonium.Kieganonium;
 import net.silas.kieganonium.block.ModBlocks;
 import net.silas.kieganonium.item.ModItems;
@@ -38,6 +40,110 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.MAGIC_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.KIEGANONIUM_BLOCK.get()), has(ModBlocks.KIEGANONIUM_BLOCK.get()))
                 .save(pRecipeOutput, Kieganonium.MOD_ID + ":kieganonium_from_magic_block");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KIEGANONIUM.get())
+                .pattern("ABA")
+                .pattern("BCB")
+                .pattern("ABA")
+                .define('A', Blocks.NETHERITE_BLOCK)
+                .define('B', Blocks.DIAMOND_BLOCK)
+                .define('C', Blocks.BEACON)
+                .unlockedBy(getHasName(Blocks.NETHERITE_BLOCK), has(Blocks.NETHERITE_BLOCK)).save(pRecipeOutput, Kieganonium.MOD_ID + ":kieganonium_from_crafting");
+
+        // Tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_SWORD.get())
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" S ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_PICKAXE.get())
+                .pattern("###")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_SHOVEL.get())
+                .pattern(" # ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_AXE.get())
+                .pattern("##")
+                .pattern("S#")
+                .pattern("S ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_HOE.get())
+                .pattern("##")
+                .pattern(" S")
+                .pattern(" S")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.KIEGANONIUM_HAMMER.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern(" S ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KIEGANONIUM_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KIEGANONIUM_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KIEGANONIUM_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KIEGANONIUM_BOOTS.get())
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.JAVELIN.get())
+                .pattern(" ##")
+                .pattern(" S#")
+                .pattern("S  ")
+                .define('#', ModItems.KIEGANONIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.KIEGANONIUM.get()), has(ModItems.KIEGANONIUM.get()))
+                .save(pRecipeOutput);
+
 
         oreSmelting(pRecipeOutput, KIEGANONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KIEGANONIUM.get(), 0.25f, 200, "kieganonium");
         oreBlasting(pRecipeOutput, KIEGANONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.KIEGANONIUM.get(), 0.25f, 100, "kieganonium");

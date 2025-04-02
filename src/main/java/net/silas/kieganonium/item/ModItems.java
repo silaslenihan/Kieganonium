@@ -39,19 +39,19 @@ public class ModItems {
 
     public static final RegistryObject<Item> KIEGANONIUM_SWORD = ITEMS.register("kieganonium_sword",
             () -> new SwordItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.KIEGANONIUM, 3, -2.4f))));
+                    .attributes(SwordItem.createAttributes(ModToolTiers.KIEGANONIUM, 10, -2.4f))));
     public static final RegistryObject<Item> KIEGANONIUM_PICKAXE = ITEMS.register("kieganonium_pickaxe",
             () -> new PickaxeItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.KIEGANONIUM, 1, -2.8f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.KIEGANONIUM, 5, -2.8f))));
     public static final RegistryObject<Item> KIEGANONIUM_SHOVEL = ITEMS.register("kieganonium_shovel",
             () -> new ShovelItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.KIEGANONIUM, 1.5f, -3.0f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.KIEGANONIUM, 5, -3.0f))));
     public static final RegistryObject<Item> KIEGANONIUM_AXE = ITEMS.register("kieganonium_axe",
             () -> new AxeItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.KIEGANONIUM, 6, -3.2f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.KIEGANONIUM, 9, -3.2f))));
     public static final RegistryObject<Item> KIEGANONIUM_HOE = ITEMS.register("kieganonium_hoe",
             () -> new HoeItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.KIEGANONIUM, 0, -3))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.KIEGANONIUM, 1, -3))));
     public static final RegistryObject<Item> KIEGANONIUM_HAMMER = ITEMS.register("kieganonium_hammer",
             () -> new HammerItem(ModToolTiers.KIEGANONIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.KIEGANONIUM, 7, -3.5f))));
@@ -70,7 +70,7 @@ public class ModItems {
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
 
     public static final RegistryObject<Item> JAVELIN = ITEMS.register("javelin",
-            () -> new JavelinItem(new Item.Properties().durability(250)));
+            () -> new JavelinItem(new Item.Properties().durability(500)));
 
 
     public static void register(IEventBus eventBus) {
